@@ -1,0 +1,40 @@
+/* handy shortcuts */
+.true(@height: 20px){
+    height: @height;
+    line-height: @height;
+}
+
+.indent(@indent: -9999em){
+    text-indent: @indent;
+}
+
+.clear{/* for use on :after */
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.magic-box{
+    &:before{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        content:"";
+    }
+}
+
+
+/* basics */
+img{
+	max-width: 100%;
+}
+
+a{
+	transition: ease all .3s;
+	outline: none;
+}
+
